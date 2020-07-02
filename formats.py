@@ -21,7 +21,7 @@ def read_files(name='newsafr.json'):
 
 
 def count_word(description_text):
-    list_split = description_text.split(' ')
+    list_split = description_text.lower().split(' ')
     dict_word_value = {}
     for word in list_split:
         if len(word) > 6:
